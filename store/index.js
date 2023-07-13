@@ -1,10 +1,10 @@
 import { configureStore } from "@reduxjs/toolkit"
 import { createWrapper } from "next-redux-wrapper"
-import { testReducer } from "./test-slice"
+import { navReducer } from "./nav-slice"
 
 const store = configureStore({
     reducer: {
-        test: testReducer
+        nav: navReducer
     }
 })
 
