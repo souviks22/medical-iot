@@ -1,9 +1,10 @@
 import Navbar from "../Navbar"
+import Container from "../Container"
 
 const Layout = ({ children }) => {
     return (<main className='flex'>
         <Navbar />
-        {children}
+        <Container>{children}</Container>
     </main>)
 }
 

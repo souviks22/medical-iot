@@ -37,11 +37,12 @@ const Line = () => {
         dataLabels: { enabled: false },
         stroke: { curve: 'smooth' },
         markers: { size: 0 },
+        xaxis: { labels: { show: false } },
         yaxis: { max: 200 },
         legend: { show: false },
     }
 
-    return (<Chart type='line' series={series} options={options} height={350} />)
+    return (<Chart type='line' series={series} options={options} className='h-80 w-1/2' />)
 }
 
 export default Line
