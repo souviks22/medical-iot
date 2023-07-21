@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux"
 import { realtimeActions } from "@/store/realtime-slice"
 
 import dynamic from 'next/dynamic'
+import ChartWrapper from "../ChartWrapper"
 const Chart = dynamic(() => import('react-apexcharts'), { ssr: false })
 
 const Line = () => {
@@ -16,14 +17,12 @@ const Line = () => {
     }, [])
 
     const series = [{
-        name: 'Pulse',
+        name: 'Pulse Rate',
         data: pulse
     }]
+
     const options = {
         chart: {
-            id: 'realtime',
-            type: 'line',
-            height: 350,
             animations: {
                 enabled: true,
                 easing: 'linear',
@@ -36,16 +35,20 @@ const Line = () => {
         },
         dataLabels: { enabled: false },
         stroke: { curve: 'smooth' },
-        markers: { size: 0 },
-        xaxis: { labels: { show: false } },
-        yaxis: { max: 200 },
-        legend: { show: false },
+        xaxis: {
+            labels: { show: false },
+            axisTicks: { show: false }
+        },
+        yaxis: {
+            min: 0,
+            max: 200
+        },
+        tooltip: { enabled: false }
     }
 
-    return (<section className='flex flex-col items-center'>
-        <h4 className='text-2xl'>Pulse Rate</h4>
-        <Chart type='line' series={series} options={options} className='h-80 w-1/2' />
-    </section>)
+    return (<ChartWrapper label={'Pulse Rate'}>
+        <Chart type='line' series={series} options={options} className='w-1/2' />
+    </ChartWrapper>)
 }
 
 export default Line

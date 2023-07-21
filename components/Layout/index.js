@@ -2,7 +2,7 @@ import Navbar from "../Navbar"
 import Container from "../Container"
 
 const Layout = ({ children }) => {
-    return (<main className='flex'>
+    return (<main>
         <Navbar />
         <Container>{children}</Container>
     </main>)

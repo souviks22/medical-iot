@@ -15,7 +15,7 @@ const Navbar = () => {
     const navExpandHandler = () => {
         dispatch(navActions.toggle())
     }
-    return (<nav className={`h-screen flex flex-col justify-around bg-gradient-radial from-slate-200 to-slate-300 p-5`}>
+    return (<nav className={`h-screen fixed flex flex-col justify-around bg-gradient-radial from-slate-200 to-slate-300 p-5`}>
         <NavLink href={'/'} icon={<IoLogoVercel />} />
         <section className='flex flex-col'>
             <NavLink label={'Home'} href={'/'} icon={<AiFillHome />} />

@@ -3,7 +3,7 @@ import { createSlice } from "@reduxjs/toolkit"
 const realtimeSlice = createSlice({
     name: 'realtime',
     initialState: {
-        pulse: Array.from({ length: 100 }, () => ({
+        pulse: Array.from({ length: 10 }, () => ({
             x: Date.now(),
             y: 0
         }))
