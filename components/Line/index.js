@@ -42,7 +42,10 @@ const Line = () => {
         legend: { show: false },
     }
 
-    return (<Chart type='line' series={series} options={options} className='h-80 w-1/2' />)
+    return (<section className='flex flex-col items-center'>
+        <h4 className='text-2xl'>Pulse Rate</h4>
+        <Chart type='line' series={series} options={options} className='h-80 w-1/2' />
+    </section>)
 }
 
 export default Line

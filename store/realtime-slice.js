@@ -11,7 +11,7 @@ const realtimeSlice = createSlice({
     reducers: {
         addPulse(state) {
             state.pulse.shift()
-            const pulse = Math.floor(Math.random() * (180 - 70) + 70)
+            const pulse = Math.floor(Math.random() * (180 - 40 + 1)) + 40
             state.pulse.push({
                 x: Date.now(),
                 y: pulse

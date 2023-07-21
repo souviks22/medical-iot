@@ -1,5 +1,9 @@
+import Header from "@/components/Header"
+
 const Plans = () => {
-    return (<div>Plans</div>)
+    return (<div>
+        <Header>Plans</Header>
+    </div>)
 }
 
 export default Plans
