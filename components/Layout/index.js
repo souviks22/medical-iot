@@ -1,11 +1,11 @@
+import { AnimatePresence } from "framer-motion"
 import Navbar from "../Navbar"
-import Container from "../Container"
 
 const Layout = ({ children }) => {
-    return (<main>
+    return (<AnimatePresence>
         <Navbar />
-        <Container>{children}</Container>
-    </main>)
+        {children}
+    </AnimatePresence>)
 }
 
 export default Layout

@@ -1,9 +1,10 @@
+import Container from "@/components/Container"
 import Header from "@/components/Header"
 
 const Contact = () => {
-    return (<div>
+    return (<Container>
         <Header>Contact</Header>
-    </div>)
+    </Container>)
 }
 
 export default Contact

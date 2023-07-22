@@ -1,11 +1,12 @@
+import Container from "@/components/Container"
 import Header from "@/components/Header"
 import Line from "@/components/Line"
 
 const Home = () => {
-    return (<div>
+    return (<Container>
         <Header>Dashboard</Header>
         <Line />
-    </div>)
+    </Container>)
 }
 
 export default Home

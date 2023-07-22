@@ -1,9 +1,10 @@
+import Container from "@/components/Container"
 import Header from "@/components/Header"
 
 const Plans = () => {
-    return (<div>
+    return (<Container>
         <Header>Plans</Header>
-    </div>)
+    </Container>)
 }
 
 export default Plans

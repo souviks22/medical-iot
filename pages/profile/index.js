@@ -1,9 +1,10 @@
+import Container from "@/components/Container"
 import Header from "@/components/Header"
 
 const Profile = () => {
-    return (<div>
+    return (<Container>
         <Header>Profile</Header>
-    </div>)
+    </Container>)
 }
 
 export default Profile
