@@ -1,15 +1,10 @@
-import Real from "@/components/Patient/RealTime_Observation";
-import Patient from "@/components/Patient/Patient_Details";
+import Container from "@/components/Container"
+import Header from "@/components/Header"
 
 const Profile = () => {
-    return (
-    <div>
-        Profile
-        <Patient />
-        <Real/>
-
-    </div>
-    )
+    return (<Container>
+        <Header>Profile</Header>
+    </Container>)
 }
 
 export default Profile
