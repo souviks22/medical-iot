@@ -1,10 +1,11 @@
+import { AnimatePresence } from "framer-motion"
 import Navbar from "../Navbar"
 
 const Layout = ({ children }) => {
-    return (<main className='flex'>
+    return (<AnimatePresence>
         <Navbar />
         {children}
-    </main>)
+    </AnimatePresence>)
 }
 
 export default Layout

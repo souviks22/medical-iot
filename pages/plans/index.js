@@ -1,5 +1,10 @@
+import Container from "@/components/Container"
+import Header from "@/components/Header"
+
 const Plans = () => {
-    return (<div>Plans</div>)
+    return (<Container>
+        <Header>Plans</Header>
+    </Container>)
 }
 
 export default Plans
