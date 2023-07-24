@@ -11,7 +11,7 @@ const NavLink = ({ label, href = '', icon, onClick = () => { } }) => {
     const { isExpanded } = useSelector(state => state.nav)
 
     return (<Link href={href}
-        className={`${!label && 'w-min'} group flex items-center hover:bg-slate-300 ${href === pathname && 'bg-slate-300'} rounded p-2 my-2`}
+        className={`group flex items-center hover:bg-slate-300 ${href === pathname && 'bg-slate-300'} rounded p-2 my-2`}
         onClick={onClick}
     >
         <NavIcon>{icon}</NavIcon>
