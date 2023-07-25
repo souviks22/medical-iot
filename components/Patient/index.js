@@ -25,7 +25,7 @@ const Patient = () => {
                 <strong className="ml-10 p-2 flex-grow">Weight:</strong> {Data.weight}
                 <strong className="ml-10 p-2 flex-grow">Sex:</strong> {Data.Sex}</p>
                 </div>
-              <div className="flex justify-center"><button className="bg-white font-serif text-green hover:bg-black hover:text-white text-sm rounded p-2 m-2 my-2 items-center border-2 border-black" onClick={expand}>View Full Profile </button></div>
+              <div className="flex justify-center"><button className="bg-white font-serif text-green hover:bg-black hover:bg-white text-sm rounded p-2 m-2 my-2 items-center border-2 border-black" onClick={expand}>View Full Profile </button></div>
             </div>
           </div>)}
         {expanded && (
