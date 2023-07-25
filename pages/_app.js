@@ -1,7 +1,7 @@
 import { wrapper } from '@/store'
 import '@/styles/globals.css'
 
-import Layout from '@/components/Layout'
+import Layout from '@/components/ui/Layout'
 
 const App = ({ Component, pageProps }) => {
     return (<Layout>

@@ -1,6 +1,6 @@
-import Container from "@/components/Container"
-import Header from "@/components/Header"
-import Line from "@/components/Line"
+import Container from "@/components/ui/Container"
+import Header from "@/components/ui/Header"
+import Line from "@/components/charts/Line"
 
 const Home = () => {
     return (<Container>

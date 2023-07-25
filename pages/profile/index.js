@@ -1,5 +1,5 @@
-import Container from "@/components/Container"
-import Header from "@/components/Header"
+import Container from "@/components/ui/Container"
+import Header from "@/components/ui/Header"
 
 const Profile = () => {
     return (<Container>

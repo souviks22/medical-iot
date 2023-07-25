@@ -1,5 +1,5 @@
 import { AnimatePresence } from "framer-motion"
-import Navbar from "../Navbar"
+import Navbar from "../../navigation/Navbar"
 
 const Layout = ({ children }) => {
     return (<AnimatePresence>
