@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Image from "next/image.js";
-import Data from "./Patient.js";
+import Data from "./Patient_Data.js";
 
 const Patient = () => {
   const [expanded, setExpanded] = useState(false);
