@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux"
 import { realtimeActions } from "@/store/realtime-slice"
 
 import dynamic from 'next/dynamic'
-import ChartWrapper from "../ChartWrapper"
+import ChartWrapper from "../../ui/ChartWrapper"
 const Chart = dynamic(() => import('react-apexcharts'), { ssr: false })
 
 const Line = () => {

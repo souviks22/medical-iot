@@ -1,6 +1,6 @@
-import Container from "@/components/Container"
-import Header from "@/components/Header"
-import Bar from "@/components/Bar"
+import Container from "@/components/ui/Container"
+import Header from "@/components/ui/Header"
+import Bar from "@/components/charts/Bar"
 
 const Stats = () => {
     return (<Container>
