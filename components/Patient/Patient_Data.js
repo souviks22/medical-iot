@@ -1,4 +1,6 @@
-const Data = {
+const patientData = {
+    pic:'/images/Arka.jpeg',
+    email:'sourikbhuiya@gmail.com',
     name: 'Sourik Bhuiya',
     Age:20,
     weight:69,
@@ -8,4 +10,4 @@ const Data = {
     Last_Checked_in: 'Today',
 };
 
-export default Data;
+export default patientData;

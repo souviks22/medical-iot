@@ -1,7 +1,8 @@
 import Container from "@/components/ui/Container"
 import Header from "@/components/ui/Header"
 import Line from "@/components/charts/Line"
-
+import Real from "@/components/RealTime"
+import Patient from "@/components/Patient"
 const Home = () => {
     return (<Container>
         <Header>Dashboard</Header>
