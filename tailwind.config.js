@@ -10,6 +10,8 @@ module.exports = {
         {
             fontFamily: {
                 'poppins': ['Poppins', 'sans-serif'],
+                'customFont':["Oswald"],
+                'my-font':['Georgia','Helvetica']
             },
         extend: {
             backgroundImage: {
