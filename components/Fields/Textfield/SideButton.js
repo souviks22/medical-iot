@@ -14,6 +14,9 @@ const SideButton = ({ editAble, editMode, onClick }) => {
           Submit
         </button>
       )}
+      {
+        !editAble && (<div className="mx-4"></div>)
+      }
     </div>
   );
 };

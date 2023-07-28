@@ -33,7 +33,7 @@ const Field = ({index,label,dataType,editAble,value,option}) => {
 
   return (
         <div key= {index} className="w-full items-center justify-center my-2 ">
-          <label htmlFor={`input-${index}`} className="justify-center text-right text-2xl mx-4 font-my-font">
+          <label htmlFor={`input-${index}`} className="justify-center text-right text-2xl mx-4 font-my-font text-gray-600">
             {label}
           </label>
           <div className="flex my-2 items-center justify-left mx-4">

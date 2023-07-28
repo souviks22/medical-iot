@@ -12,8 +12,10 @@ const img ={
 const Profile = () => {
     return (<Container>
         <Header>Profile</Header>
-        <div className="">
+        <div className="flex justify-center">
+        <div className="w-3/4">
         <Profileform/>
+        </div>
         </div>
         
     </Container>)

@@ -23,9 +23,10 @@ const Blood_Group=[
 ]
 const Profileform=()=>{
     return(
-        <div className="justify-center">
-        <div className="rounded-lg shadow-md p-2 shadow-blue-500 shadow-outside">
+        <div className="rounded-lg shadow-md p-2 px-9 shadow-blue-500 shadow-outside ">
+            <div className="flex justify-center">
             <ImageField data={img}/>
+            </div>
             <Field index={1} label="Email" dataType="email" editAble= {false} value={patientData.email}></Field>
             <div className="flex">
             <Field index={2} label="Name" dataType="text" editAble={true} value={patientData.name}></Field>
@@ -42,7 +43,7 @@ const Profileform=()=>{
                 <Field index={7} label="Blood Group" dataType="drop-down" editAble={true} value={patientData.Blood_Group} option={Blood_Group}></Field>
             </div>
             </div>
-            </div>
+           
     )
 }
 export default Profileform;
