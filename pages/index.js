@@ -7,11 +7,11 @@ const Home = () => {
     return (<Container>
         <Header>Dashboard</Header>
         <div className="flex justify-left">
-        <div className="flex-grow-8">
+        <div className="w-1/2">
         <Real/>
         <Line />
         </div>
-        <div className="flex-grow-4 w-full">
+        <div className="flex w-1/2 px-5">
         <Patient/>
         </div>
         </div>
